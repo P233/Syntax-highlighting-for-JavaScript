@@ -32,7 +32,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>/</string>
+			<string>(?&lt;==|\()\s*/</string>
 			<key>end</key>
 			<string>/[gim]*</string>
 			<key>name</key>
@@ -91,7 +91,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)[A-Za-z_]+(?=\.|\s|;|\[|\]|\)|\?)|(?&lt;=\{|,)\s*[A-Za-z_]+\s*(?=:)|^\s*[A-Za-z_]+\s*(?=:)</string>
+			<string>(?&lt;=\.)[A-Za-z_]+(?=\.|\s|,|;|\[|\]|\)|\?)|(?&lt;=\{|,)\s*[A-Za-z_]+\s*(?=:)|^\s*[A-Za-z_]+\s*(?=:)</string>
 			<key>name</key>
 			<string>support.constant.js</string>
 		</dict>
