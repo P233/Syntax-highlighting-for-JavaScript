@@ -85,6 +85,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(?&lt;=\.)[A-Za-z_]+(?=\.|\s)</string>
+			<key>name</key>
+			<string>support.constant.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(?&lt;=\.)[A-Za-z_]+(?=\()|[A-Za-z_]+(?=\()</string>
 			<key>name</key>
 			<string>support.function.js</string>
