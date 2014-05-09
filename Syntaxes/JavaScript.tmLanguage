@@ -77,7 +77,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\{|,)\s*[A-Za-z_]+\s*(?=:\s*function)|^\s*[A-Za-z_]+\s*(?=:\s*function)</string>
+			<string>(?&lt;=\{|,)\s*[A-Za-z$_]+\s*(?=:\s*function)|^\s*[A-Za-z$_]+\s*(?=:\s*function)</string>
 			<key>name</key>
 			<string>support.function.js</string>
 		</dict>
@@ -103,13 +103,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)[A-Za-z_]+(?=\.|\s|,|;|\[|\]|\)|\?|\+|\-)|(?&lt;=\{|,)\s*[A-Za-z_]+\s*(?=:)|^\s*[A-Za-z_]+\s*(?=:)</string>
+			<string>(?&lt;=\.)[A-Za-z$_]+(?=\.|\s|,|;|\[|\]|\)|\?|\+|\-)|(?&lt;=\{|,)\s*[A-Za-z$_]+\s*(?=:)|^\s*[A-Za-z$_]+\s*(?=:)</string>
 			<key>name</key>
 			<string>support.constant.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)[A-Za-z_]+(?=\()|[A-Za-z_]+(?=\()</string>
+			<string>(?&lt;=\.)[A-Za-z$_]+(?=\()|[A-Za-z$_]+(?=\()</string>
 			<key>name</key>
 			<string>support.function.js</string>
 		</dict>
