@@ -85,7 +85,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\+|-|\*|/|%|=|!|\^|~|&lt;|&gt;|&amp;|\bdelete\b|\btypeof\b|\bvoid\b|\binstanceof\b|\bin\b</string>
+			<string>\+|-|\*|/|%|=|!|\^|~|\||&lt;|&gt;|&amp;|\bdelete\b|\btypeof\b|\bvoid\b|\binstanceof\b|\bin\b</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
 		</dict>
