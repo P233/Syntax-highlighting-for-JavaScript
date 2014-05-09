@@ -31,6 +31,22 @@
 			<string>comment.line.double-slash.js</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.js</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>end</key>
+			<string>'</string>
+			<key>name</key>
+			<string>string.quoted.single.js</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>(-|\.)?[0-9]+(\.[0-9]+)?</string>
 			<key>name</key>
