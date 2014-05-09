@@ -64,6 +64,12 @@
 			<string>string.quoted.single.js</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>(?&lt;=\{|,)\s*[A-Za-z_]+\s*(?=:\s*function)|^\s*[A-Za-z_]+\s*(?=:\s*function)</string>
+			<key>name</key>
+			<string>support.function.js</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>highlight delete, typeof, void, instanceof as operator</string>
 			<key>match</key>
@@ -85,7 +91,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)[A-Za-z_]+</string>
+			<string>(?&lt;=\.)[A-Za-z_]+(?=\.|\s|;|\[|\]|\)|\?)|(?&lt;=\{|,)\s*[A-Za-z_]+\s*(?=:)|^\s*[A-Za-z_]+\s*(?=:)</string>
 			<key>name</key>
 			<string>support.constant.js</string>
 		</dict>
