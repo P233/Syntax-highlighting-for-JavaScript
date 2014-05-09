@@ -40,10 +40,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>\\.{1}</string>
-					<key>name</key>
-					<string>constant.character.escape.js</string>
+					<key>include</key>
+					<string>#escape</string>
 				</dict>
 			</array>
 		</dict>
@@ -54,6 +52,13 @@
 			<string>"</string>
 			<key>name</key>
 			<string>string.quoted.double.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#escape</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -62,6 +67,13 @@
 			<string>'</string>
 			<key>name</key>
 			<string>string.quoted.single.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#escape</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -104,6 +116,13 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>escape</key>
+		<dict>
+			<key>match</key>
+			<string>\\.{1}</string>
+			<key>name</key>
+			<string>constant.character.escape.js</string>
+		</dict>
 	</dict>
 	<key>scopeName</key>
 	<string>source.js</string>
