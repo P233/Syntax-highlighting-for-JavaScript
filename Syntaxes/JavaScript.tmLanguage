@@ -46,9 +46,10 @@
 			<key>name</key>
 			<string>string.quoted.single.js</string>
 		</dict>
+
 		<dict>
 			<key>match</key>
-			<string>(-|\.)?[0-9]+(\.[0-9]+)?|\bNaN\b|-?\bInfinity\b</string>
+			<string>(-|\.)?\b[0-9]+(\.[0-9]+)?\b|\bNaN\b|-?\bInfinity\b|\b0(x|X)[0-9a-fA-F]+</string>
 			<key>name</key>
 			<string>constant.numeric.js</string>
 		</dict>
