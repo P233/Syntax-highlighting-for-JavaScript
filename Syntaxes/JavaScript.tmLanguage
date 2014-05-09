@@ -83,6 +83,12 @@
 			<key>name</key>
 			<string>keyword.operator.js</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\.)[A-Za-z_]+(?=\()|[A-Za-z_]+(?=\()</string>
+			<key>name</key>
+			<string>support.function.js</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
