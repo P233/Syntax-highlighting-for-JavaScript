@@ -48,15 +48,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\+|-|\*|/|%|=|!|\^|~|&lt;|&gt;|&amp;|\bdelete\b|\btypeof\b|\bvoid\b|\binstanceof\b|\bin\b</string>
+			<string>(-|\.)?[0-9]+(\.[0-9]+)?|\bNaN\b|-?\bInfinity\b</string>
 			<key>name</key>
-			<string>keyword.operator.js</string>
+			<string>constant.numeric.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(-|\.)?[0-9]+(\.[0-9]+)?</string>
+			<string>\+|-|\*|/|%|=|!|\^|~|&lt;|&gt;|&amp;|\bdelete\b|\btypeof\b|\bvoid\b|\binstanceof\b|\bin\b</string>
 			<key>name</key>
-			<string>constant.numeric.js</string>
+			<string>keyword.operator.js</string>
 		</dict>
 	</array>
 	<key>repository</key>
