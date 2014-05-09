@@ -30,6 +30,12 @@
 			<key>name</key>
 			<string>comment.line.double-slash.js</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>(-|\.)?[0-9]+(\.[0-9]+)?</string>
+			<key>name</key>
+			<string>constant.numeric.js</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
