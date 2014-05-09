@@ -48,6 +48,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\+|-|\*|/|%|=|!|\^|~|&lt;|&gt;|&amp;|\bdelete\b|\btypeof\b|\bvoid\b|\binstanceof\b|\bin\b</string>
+			<key>name</key>
+			<string>keyword.operator.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(-|\.)?[0-9]+(\.[0-9]+)?</string>
 			<key>name</key>
 			<string>constant.numeric.js</string>
