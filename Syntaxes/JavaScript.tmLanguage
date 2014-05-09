@@ -103,6 +103,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(?&lt;!\.)\b[A-Za-z0-9$_]+(?=\.|\s*=\s*\{)</string>
+			<key>name</key>
+			<string>string.js.object-name</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(?&lt;!\.)\b[A-Za-z0-9$_]+(?=\[|\s*=\s*\[)</string>
 			<key>name</key>
 			<string>variable.js.array-name</string>
