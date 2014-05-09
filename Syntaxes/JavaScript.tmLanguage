@@ -46,7 +46,14 @@
 			<key>name</key>
 			<string>string.quoted.single.js</string>
 		</dict>
-
+		<dict>
+			<key>comment</key>
+			<string>highlight delete, typeof, void, instanceof as operator</string>
+			<key>match</key>
+			<string>\b(break|function|return|case|do|if|switch|var|catch|else|in|this|continue|false|throw|while|debugger|finally|new|true|with|default|for|null|try|class|const|enum|export|extends|import|super|implements|let|private|public|yield|interface|package|protected|static|arguments|eval)\b</string>
+			<key>name</key>
+			<string>keyword.reserved.js</string>
+		</dict>
 		<dict>
 			<key>match</key>
 			<string>(-|\.)?\b[0-9]+(\.[0-9]+)?\b|\bNaN\b|-?\bInfinity\b|\b0(x|X)[0-9a-fA-F]+</string>
