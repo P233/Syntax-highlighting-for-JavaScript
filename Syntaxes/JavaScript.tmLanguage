@@ -32,6 +32,23 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>/</string>
+			<key>end</key>
+			<string>/[gim]*</string>
+			<key>name</key>
+			<string>string.regexp.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\.{1}</string>
+					<key>name</key>
+					<string>constant.character.escape.js</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>"</string>
 			<key>end</key>
 			<string>"</string>
