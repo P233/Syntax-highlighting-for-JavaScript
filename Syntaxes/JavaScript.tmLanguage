@@ -103,6 +103,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(?&lt;!\.)\b[A-Za-z0-9$_]+(?=\[|\s*=\s*\[)</string>
+			<key>name</key>
+			<string>variable.js.array-name</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(?&lt;=\.)[A-Za-z$_]+(?=\.|\s|,|;|\[|\]|\)|\?|\+|\-)|(?&lt;=\{|,)\s*[A-Za-z$_]+\s*(?=:)|^\s*[A-Za-z$_]+\s*(?=:)</string>
 			<key>name</key>
 			<string>support.constant.js</string>
