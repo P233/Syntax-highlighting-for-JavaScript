@@ -105,17 +105,17 @@
 			<key>match</key>
 			<string>(?&lt;!\.)\b[A-Za-z0-9$_]+(?=\.|\s*=\s*\{)</string>
 			<key>name</key>
-			<string>string.js.object-name</string>
+			<string>object-name</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;!\.)\b[A-Za-z0-9$_]+(?=\[|\s*=\s*\[)</string>
 			<key>name</key>
-			<string>variable.js.array-name</string>
+			<string>array-name</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)[A-Za-z$_]+(?=\.|\s|,|;|\[|\]|\)|\?|\+|\-)|(?&lt;=\{|,)\s*[A-Za-z$_]+\s*(?=:)|^\s*[A-Za-z$_]+\s*(?=:)</string>
+			<string>(?&lt;=\.)[A-Za-z$_]+(?=\.|\s|,|;|\[|\]|\)|\?|\+|\-|=)|(?&lt;=\{|,)\s*[A-Za-z$_]+\s*(?=:)|^\s*[A-Za-z$_]+\s*(?=:)</string>
 			<key>name</key>
 			<string>support.constant.js</string>
 		</dict>
@@ -124,6 +124,12 @@
 			<string>(?&lt;=\.)[A-Za-z$_]+(?=\()|[A-Za-z$_]+(?=\()</string>
 			<key>name</key>
 			<string>support.function.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[a-zA-Z0-9$_]+</string>
+			<key>name</key>
+			<string>variable.js</string>
 		</dict>
 	</array>
 	<key>repository</key>
