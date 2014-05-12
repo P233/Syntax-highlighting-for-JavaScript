@@ -90,10 +90,8 @@
 			<string>keyword.reserved.js</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>(-|\.)?\b[0-9]+(\.[0-9]+)?\b|\bNaN\b|-?\bInfinity\b|\b0(x|X)[0-9a-fA-F]+</string>
-			<key>name</key>
-			<string>constant.numeric.js</string>
+			<key>include</key>
+			<string>#numeric</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -127,19 +125,33 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>[a-zA-Z0-9$_]+</string>
+			<string>(?&lt;=\()[A-Za-z0-9$_,\s]+(?=\))</string>
 			<key>name</key>
-			<string>variable.js</string>
+			<string>variable.parameters.js</string>
 		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>comma</key>
+		<dict>
+			<key>match</key>
+			<string>,</string>
+			<key>name</key>
+			<string>comment.punctuation.comma.js</string>
+		</dict>
 		<key>escape</key>
 		<dict>
 			<key>match</key>
 			<string>\\.{1}</string>
 			<key>name</key>
 			<string>constant.character.escape.js</string>
+		</dict>
+		<key>numeric</key>
+		<dict>
+			<key>match</key>
+			<string>(-|\.)?\b[0-9]+(\.[0-9]+)?\b|\bNaN\b|-?\bInfinity\b|\b0(x|X)[0-9a-fA-F]+</string>
+			<key>name</key>
+			<string>constant.numeric.js</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
