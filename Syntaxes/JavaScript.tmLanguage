@@ -76,6 +76,10 @@
 			</array>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>#comma</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>(?&lt;=\{|,)\s*[A-Za-z$_]+\s*(?=(:|=)\s*function)|^\s*[A-Za-z$_]+\s*(?=(:|=)\s*function)</string>
 			<key>name</key>
