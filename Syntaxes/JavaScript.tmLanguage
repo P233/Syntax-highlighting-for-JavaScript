@@ -76,12 +76,10 @@
 			</array>
 		</dict>
 		<dict>
-			<key>include</key>
-			<string>#comma</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#semicolon</string>
+			<key>match</key>
+			<string>,</string>
+			<key>name</key>
+			<string>comment.punctuation.comma.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -98,26 +96,16 @@
 			<string>keyword.reserved.js</string>
 		</dict>
 		<dict>
-			<key>include</key>
-			<string>#numeric</string>
+			<key>match</key>
+			<string>(-|\.)?\b[0-9]+(\.[0-9]+)?\b|\bNaN\b|-?\bInfinity\b|\b0(x|X)[0-9a-fA-F]+</string>
+			<key>name</key>
+			<string>constant.numeric.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\+|-|\*|/|%|=|!|\^|~|\||&lt;|&gt;|&amp;|\bdelete\b|\btypeof\b|\bvoid\b|\binstanceof\b|\bin\b</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\b[A-Za-z0-9$_]+(?=\.|\s*=\s*\{)</string>
-			<key>name</key>
-			<string>object-name</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;!\.)\b[A-Za-z0-9$_]+(?=\[|\s*=\s*\[)</string>
-			<key>name</key>
-			<string>array-name</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -131,42 +119,15 @@
 			<key>name</key>
 			<string>support.function.js</string>
 		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;=\()[A-Za-z0-9$_,\s]+(?=\))</string>
-			<key>name</key>
-			<string>variable.parameters.js</string>
-		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>comma</key>
-		<dict>
-			<key>match</key>
-			<string>,</string>
-			<key>name</key>
-			<string>comment.punctuation.comma.js</string>
-		</dict>
 		<key>escape</key>
 		<dict>
 			<key>match</key>
 			<string>\\.{1}</string>
 			<key>name</key>
 			<string>constant.character.escape.js</string>
-		</dict>
-		<key>numeric</key>
-		<dict>
-			<key>match</key>
-			<string>(-|\.)?\b[0-9]+(\.[0-9]+)?\b|\bNaN\b|-?\bInfinity\b|\b0(x|X)[0-9a-fA-F]+</string>
-			<key>name</key>
-			<string>constant.numeric.js</string>
-		</dict>
-		<key>semicolon</key>
-		<dict>
-			<key>match</key>
-			<string>;</string>
-			<key>name</key>
-			<string>string.regexp.js</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
