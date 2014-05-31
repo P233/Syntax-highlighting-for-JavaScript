@@ -14,10 +14,6 @@
 		<string>sublime-project</string>
 		<string>sublime-completions</string>
 	</array>
-	<key>foldingStartMarker</key>
-	<string>\{\s*$</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*\}</string>
 	<key>name</key>
 	<string>JSON</string>
 	<key>patterns</key>
