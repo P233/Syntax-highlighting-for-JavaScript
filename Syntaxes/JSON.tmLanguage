@@ -24,46 +24,46 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>/\*</string>
+			<string>"</string>
 			<key>end</key>
-			<string>\*/</string>
+			<string>"</string>
 			<key>name</key>
-			<string>comment.block.js</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>//</string>
-			<key>end</key>
-			<string>$\n?</string>
-			<key>name</key>
-			<string>comment.line.double-slash.js</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>'</string>
-			<key>end</key>
-			<string>'</string>
-			<key>name</key>
-			<string>invalid.illegal</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>("[A-Za-z0-9_]+")\s*(:)</string>
-			<key>end</key>
-			<string>(?=,|\{|\}|//)</string>
-			<key>name</key>
-			<string>list</string>
+			<string>variable.js</string>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>\\.{1}</string>
+					<key>include</key>
+					<string>#escape</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>:</string>
+			<key>end</key>
+			<string>(?=,|\{|\})</string>
+			<key>name</key>
+			<string>json-entry</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>"</string>
+					<key>end</key>
+					<string>"</string>
 					<key>name</key>
-					<string>constant.character.escape.js</string>
+					<string>string.quoted.double.js</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#escape</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?:true|false|null)\b</string>
+					<string>\b(true|false|null)\b</string>
 					<key>name</key>
 					<string>constant.language.json</string>
 				</dict>
@@ -74,28 +74,64 @@
 					<string>constant.numeric.js</string>
 				</dict>
 				<dict>
-					<key>match</key>
-					<string>".*"(?=\s*,)</string>
-					<key>name</key>
-					<string>string.quoted.double.js</string>
+					<key>include</key>
+					<string>#comment-block</string>
 				</dict>
 				<dict>
-					<key>begin</key>
-					<string>"</string>
-					<key>end</key>
-					<string>}</string>
+					<key>include</key>
+					<string>#comment-line</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>:</string>
 					<key>name</key>
 					<string>invalid.illegal</string>
 				</dict>
 			</array>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>#comment-block</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#comment-line</string>
+		</dict>
+		<dict>
 			<key>match</key>
-			<string>,(?=\s*\})</string>
+			<string>[A-Za-z_']*</string>
 			<key>name</key>
 			<string>invalid.illegal</string>
 		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>comment-block</key>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.js</string>
+		</dict>
+		<key>comment-line</key>
+		<dict>
+			<key>begin</key>
+			<string>//</string>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>comment.line.double-slash.js</string>
+		</dict>
+		<key>escape</key>
+		<dict>
+			<key>match</key>
+			<string>\\.{1}</string>
+			<key>name</key>
+			<string>constant.character.escape.js</string>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.json</string>
 	<key>uuid</key>
