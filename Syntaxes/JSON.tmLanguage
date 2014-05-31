@@ -61,6 +61,10 @@
 					<key>name</key>
 					<string>invalid.illegal</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#invalid</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -100,10 +104,8 @@
 			<string>#comment-line</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>[A-Za-z_']*</string>
-			<key>name</key>
-			<string>invalid.illegal</string>
+			<key>include</key>
+			<string>#invalid</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -132,6 +134,13 @@
 			<string>\\.{1}</string>
 			<key>name</key>
 			<string>constant.character.escape.js</string>
+		</dict>
+		<key>invalid</key>
+		<dict>
+			<key>match</key>
+			<string>[A-Za-z_']*</string>
+			<key>name</key>
+			<string>invalid.illegal</string>
 		</dict>
 		<key>quoted-double</key>
 		<dict>
