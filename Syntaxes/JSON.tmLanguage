@@ -20,6 +20,21 @@
 	<array>
 		<dict>
 			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"(?=\s*:|\n)</string>
+			<key>name</key>
+			<string>variable.json</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#escape</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>:</string>
 			<key>end</key>
 			<string>(?=,|\{|\}|\[)</string>
@@ -60,34 +75,6 @@
 				<dict>
 					<key>include</key>
 					<string>#invalid</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>\[</string>
-			<key>end</key>
-			<string>\]</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#quoted-double</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>"</string>
-			<key>end</key>
-			<string>"</string>
-			<key>name</key>
-			<string>variable.js</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#escape</string>
 				</dict>
 			</array>
 		</dict>
