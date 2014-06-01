@@ -22,7 +22,7 @@
 			<key>begin</key>
 			<string>"</string>
 			<key>end</key>
-			<string>"(?=\s*:|\n)</string>
+			<string>"</string>
 			<key>name</key>
 			<string>variable.json</string>
 			<key>patterns</key>
@@ -43,8 +43,25 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>#quoted-double</string>
+					<key>match</key>
+					<string>".*"\s*:|:</string>
+					<key>name</key>
+					<string>invalid.illegal</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>"</string>
+					<key>end</key>
+					<string>"</string>
+					<key>name</key>
+					<string>string.quoted.double.js</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#escape</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -65,12 +82,6 @@
 				<dict>
 					<key>include</key>
 					<string>#comment-line</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>:</string>
-					<key>name</key>
-					<string>invalid.illegal</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -124,22 +135,6 @@
 			<string>[A-Za-z_']*</string>
 			<key>name</key>
 			<string>invalid.illegal</string>
-		</dict>
-		<key>quoted-double</key>
-		<dict>
-			<key>begin</key>
-			<string>"</string>
-			<key>end</key>
-			<string>"</string>
-			<key>name</key>
-			<string>string.quoted.double.js</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#escape</string>
-				</dict>
-			</array>
 		</dict>
 	</dict>
 	<key>scopeName</key>
