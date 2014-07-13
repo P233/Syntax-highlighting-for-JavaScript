@@ -83,7 +83,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\{|,|\.)\s*[A-Za-z$_]+\s*(?=(:|=)\s*function)|^\s*[A-Za-z$_]+\s*(?=(:|=)\s*function)</string>
+			<string>(?&lt;=\{|,|\.|var)\s*[A-Za-z$_]+\s*(?=(:|=)\s*function)|^\s*[A-Za-z$_]+\s*(?=(:|=)\s*function)</string>
 			<key>name</key>
 			<string>support.function.js</string>
 		</dict>
