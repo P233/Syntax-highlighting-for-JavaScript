@@ -117,7 +117,7 @@
 			<key>match</key>
 			<string>(?&lt;=\.)[A-Za-z$_]+(?=\()|[A-Za-z$_]+(?=\()</string>
 			<key>name</key>
-			<string>support.function.js</string>
+			<string>entity.name.function.js</string>
 		</dict>
 	</array>
 	<key>repository</key>
