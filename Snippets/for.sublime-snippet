@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+for ($1) {
+  ${0:// code...}
+}
+]]></content>
+  <tabTrigger>for</tabTrigger>
+  <scope>source.js</scope>
+</snippet>

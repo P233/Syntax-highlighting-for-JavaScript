@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+else {$1}
+]]></content>
+  <tabTrigger>else</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
