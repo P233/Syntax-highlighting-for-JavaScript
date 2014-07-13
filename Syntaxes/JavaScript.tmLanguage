@@ -21,6 +21,15 @@
 			<string>\*/</string>
 			<key>name</key>
 			<string>comment.block.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>@[a-z]+</string>
+					<key>name</key>
+					<string>doc​blockr.js</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
