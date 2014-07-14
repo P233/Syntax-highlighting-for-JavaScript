@@ -3,5 +3,5 @@
 return true;
 ]]></content>
   <tabTrigger>rtt</tabTrigger>
-  <scope>source.js</scope>
+  <scope>source.js - support.constant.js</scope>
 </snippet>

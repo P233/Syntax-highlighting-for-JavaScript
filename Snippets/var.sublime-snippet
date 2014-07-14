@@ -3,5 +3,5 @@
 var ${1:name} = ${0:value}
 ]]></content>
   <tabTrigger>var</tabTrigger>
-  <scope>source.js</scope>
+  <scope>source.js - support.constant.js</scope>
 </snippet>

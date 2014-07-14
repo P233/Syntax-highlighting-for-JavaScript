@@ -5,5 +5,5 @@ function($1) {
 }
 ]]></content>
   <tabTrigger>fun</tabTrigger>
-  <scope>source.js</scope>
+  <scope>source.js - support.constant.js</scope>
 </snippet>
