@@ -32,16 +32,14 @@
 			</array>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>//</string>
-			<key>end</key>
-			<string>$\n?</string>
+			<key>match</key>
+			<string>//.*</string>
 			<key>name</key>
 			<string>comment.line.double-slash.js</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;==|\()\s*/</string>
+			<string>(?&lt;==|\(|\[|,)\s*/(?!/)</string>
 			<key>end</key>
 			<string>/[gim]*</string>
 			<key>name</key>
