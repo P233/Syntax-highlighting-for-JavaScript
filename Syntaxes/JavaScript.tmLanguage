@@ -116,7 +116,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)[A-Za-z$_]+(?=\.|\s|,|;|\[|\]|\)|\?|\+|\-|=)|(?&lt;=\{|,)\s*[A-Za-z$_]+\s*(?=:)|^\s*[A-Za-z$_]+\s*(?=:)</string>
+			<string>(?&lt;=\.)[A-Za-z$_]+(?=\.|\s|,|;|\[|\]|\)|}|\?|\+|\-|=|$\n?)|(?&lt;=\{|,)\s*[A-Za-z$_]+\s*(?=:)|^\s*[A-Za-z$_]+\s*(?=:)</string>
 			<key>name</key>
 			<string>support.constant.js</string>
 		</dict>
