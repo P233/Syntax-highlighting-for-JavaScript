@@ -6,6 +6,8 @@
 	<array>
 		<string>js</string>
 	</array>
+	<key>firstLineMatch</key>
+	<string>^#!/usr/bin/env node</string>
 	<key>foldingStartMarker</key>
 	<string>\{\s*$</string>
 	<key>foldingStopMarker</key>
@@ -33,7 +35,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>//.*</string>
+			<string>//.*|^#!/usr/bin/env node</string>
 			<key>name</key>
 			<string>comment.line.double-slash.js</string>
 		</dict>
