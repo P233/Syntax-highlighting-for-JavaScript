@@ -118,7 +118,7 @@
 			<key>begin</key>
 			<string>//</string>
 			<key>end</key>
-			<string>$\n?</string>
+			<string>\n|$\n?</string>
 			<key>name</key>
 			<string>comment.line.double-slash.js</string>
 		</dict>
