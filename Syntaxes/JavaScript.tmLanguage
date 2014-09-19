@@ -37,7 +37,7 @@
 			<key>match</key>
 			<string>//.*|^#!/usr/bin/env node</string>
 			<key>name</key>
-			<string>comment.line.double-slash.js</string>
+			<string>comment.line.js</string>
 		</dict>
 		<dict>
 			<key>begin</key>
