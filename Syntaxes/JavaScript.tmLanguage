@@ -62,7 +62,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\{|,|\.|var)\s*[\w\$]+\s*(?=(:|=)\s*function)|(?&lt;=^|\{|,)\s*[\w\$'"]+\s*(?=(:|=)\s*function)</string>
+			<string>(?&lt;=function)\s*[\w\$]+\s*(?=\()|(?&lt;=\{|,|\.|var)\s*[\w\$]+\s*(?=(:|=)\s*function)|(?&lt;=^|\{|,)\s*[\w\$'"]+\s*(?=(:|=)\s*function)</string>
 			<key>name</key>
 			<string>entity.name.function.js</string>
 		</dict>
