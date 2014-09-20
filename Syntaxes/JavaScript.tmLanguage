@@ -62,7 +62,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=function)\s*[\w\$]+\s*(?=\()|(?&lt;=\{|,|\.|var)\s*[\w\$]+\s*(?=(:|=)\s*function)|(?&lt;=^|\{|,)\s*[\w\$'"]+\s*(?=(:|=)\s*function)</string>
+			<string>(?&lt;=function)\s*[\w\$]+\s*(?=\()|(?&lt;=\{|,|\.|var)\s*[\w\$]+\s*(?=(:|=)\s*function)|(?&lt;=^|\{|,)\s*[\w\$]+\s*(?=(:|=)\s*function)|(?&lt;=^|\{|,)\s*('|")[\w\$-]+('|")\s*(?=(:|=)\s*function)</string>
 			<key>name</key>
 			<string>entity.name.function.js</string>
 		</dict>
@@ -88,7 +88,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\.)[\w\$]+(?=\.|\s|,|;|\[|\]|\)|}|\?|\+|\-|=|\n|$\n?)|(?&lt;=^|\{|,)\s*[\w\$'"]+\s*(?=:)</string>
+			<string>(?&lt;=\.)[\w\$]+(?=\.|\s|,|;|\[|\]|\)|}|\?|\+|\-|=|\n|$\n?)|(?&lt;=^|\{|,)\s*[\w\$]+\s*(?=:)|(?&lt;=^|\{|,)\s*('|")[\w\$-]+('|")\s*(?=:)</string>
 			<key>name</key>
 			<string>support.constant.js</string>
 		</dict>
