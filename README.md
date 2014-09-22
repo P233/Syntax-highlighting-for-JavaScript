@@ -3,9 +3,9 @@
 
 Feedbacks and suggestions are more than welcome! Thanks.
 
-![Syntax Highlighting for JavaScript](i.imgur.com/yKUeH0m.png)
+![Syntax Highlighting for JavaScript](http://i.imgur.com/yKUeH0m.png)
 
-![Syntax Highlighting for JavaScript](i.imgur.com/KlrYfFl.png)
+![Syntax Highlighting for JavaScript](http://i.imgur.com/KlrYfFl.png)
 
 ## Install
 
