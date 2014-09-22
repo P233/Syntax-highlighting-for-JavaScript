@@ -3,6 +3,10 @@
 
 Feedbacks and suggestions are more than welcome! Thanks.
 
+![Syntax Highlighting for JavaScript](i.imgur.com/yKUeH0m.png)
+
+![Syntax Highlighting for JavaScript](i.imgur.com/KlrYfFl.png)
+
 ## Install
 
 Please disable the built-in JavaScript package first, then clone this repo to your package folder and set syntax to `JS`.
@@ -25,12 +29,12 @@ Element      | Scope Selector
 :----------- | :--------------
 Block Comment | comment.block.js
 Inline Comment | comment.line.js
-Comment Tag | comment.tag.js
 Doc​blockr @rule | doc​blockr.js
 Quoted | string.quoted.js
 RegExp | string.regexp.js
 RegExp Escape | constant.character.escape.js
 Reserved Word | keyword.reserved.js
+Object Type | support.class.js
 Numeric | constant.numeric.js
 Operator | keyword.operator.js
 Function Name | entity.name.function.js

@@ -67,6 +67,12 @@
 			<string>entity.name.function.js</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\b(Anchor|Applet|Area|Array|Boolean|Button|Checkbox|Date|document|event|FileUpload|Form|Frame|Function|Hidden|History|Image|JavaArray|JavaClass|JavaObject|JavaPackage|java|Layer|Link|Location|Math|MimeType|Number|navigator|netscape|Object|Option|Packages|Password|Plugin|Radio|RegExp|Reset|Select|String|Style|Submit|screen|sun|Text|Textarea|window|XMLHttpRequest)\b</string>
+			<key>name</key>
+			<string>support.class.js</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>highlight delete, typeof, void, instanceof as operator</string>
 			<key>match</key>
