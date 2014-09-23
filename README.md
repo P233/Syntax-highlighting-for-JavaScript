@@ -12,7 +12,7 @@ Feedbacks and suggestions are more than welcome! Thanks.
 Please disable the built-in JavaScript package first, then clone this repo to your package folder and set syntax to `JS`.
 
 ```
-$ git clone https://github.com/P233/Syntax-highlighting-for-Sass.git
+$ git clone https://github.com/P233/Syntax-highlighting-for-JavaScript.git
 ```
 
 
