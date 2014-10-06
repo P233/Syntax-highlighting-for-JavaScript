@@ -96,7 +96,7 @@
 			<key>match</key>
 			<string>(?&lt;=\.)[\w\$]+(?=\.|\s|,|;|\[|\]|\)|}|\?|\+|\-|=|$)|(?&lt;=^|\{|,)\s*[\w\$]+\s*(?=:)|(?&lt;=^|\{|,)\s*('|")[\w\$-]+('|")\s*(?=:)</string>
 			<key>name</key>
-			<string>variable.other</string>
+			<string>variable.other.property.js</string>
 		</dict>
 		<dict>
 			<key>match</key>

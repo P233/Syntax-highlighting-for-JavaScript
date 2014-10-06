@@ -38,7 +38,7 @@ Numeric | constant.numeric.js
 Operator | keyword.operator.js
 Object Type | <del>support.class.js</del><br>support.constant.js
 Function Name | entity.name.function.js
-Property | <del>support.constant.js</del><br>variable.other
+Property | <del>support.constant.js</del><br>variable.other.property.js
 Method | support.function.js
 
 
