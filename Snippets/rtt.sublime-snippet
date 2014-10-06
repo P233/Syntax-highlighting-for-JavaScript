@@ -1,7 +1,7 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 return true;
 ]]></content>
-  <tabTrigger>rtt</tabTrigger>
-  <scope>source.js - support.constant.js</scope>
+	<tabTrigger>rtt</tabTrigger>
+	<scope>source.js - support.constant.js</scope>
 </snippet>

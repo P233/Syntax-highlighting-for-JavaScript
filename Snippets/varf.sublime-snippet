@@ -1,9 +1,9 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 var ${1:name} = function($2) {
-  ${0:// code...}
+	${0:// code...}
 };
 ]]></content>
-  <tabTrigger>varf</tabTrigger>
-  <scope>source.js - support.constant.js</scope>
+	<tabTrigger>varf</tabTrigger>
+	<scope>source.js - support.constant.js</scope>
 </snippet>

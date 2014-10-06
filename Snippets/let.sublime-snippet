@@ -1,7 +1,7 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 let ${1:name} = ${0:value}
 ]]></content>
-  <tabTrigger>let</tabTrigger>
-  <scope>source.js - support.constant.js</scope>
+	<tabTrigger>let</tabTrigger>
+	<scope>source.js - support.constant.js</scope>
 </snippet>

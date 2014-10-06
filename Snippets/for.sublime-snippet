@@ -1,9 +1,9 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 for ($1) {
-  ${0:// code...}
+	${0:// code...}
 }
 ]]></content>
-  <tabTrigger>for</tabTrigger>
-  <scope>source.js - support.constant.js</scope>
+	<tabTrigger>for</tabTrigger>
+	<scope>source.js - support.constant.js</scope>
 </snippet>
