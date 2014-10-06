@@ -34,11 +34,11 @@ Quoted | string.quoted.js
 RegExp | string.regexp.js
 RegExp Escape | constant.character.escape.js
 Reserved Word | keyword.reserved.js
-Object Type | support.class.js
 Numeric | constant.numeric.js
 Operator | keyword.operator.js
+Object Type | <del>support.class.js</del><br>support.constant.js
 Function Name | entity.name.function.js
-Property | support.constant.js
+Property | <del>support.constant.js</del><br>variable.other
 Method | support.function.js
 
 

@@ -24,7 +24,7 @@
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
-			<string>variable.json</string>
+			<string>variable.other</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -120,7 +120,7 @@
 			<key>end</key>
 			<string>\n|$\n?</string>
 			<key>name</key>
-			<string>comment.line.double-slash.js</string>
+			<string>comment.line.js</string>
 		</dict>
 		<key>escape</key>
 		<dict>
