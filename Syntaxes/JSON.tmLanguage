@@ -20,21 +20,6 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>"</string>
-			<key>end</key>
-			<string>"</string>
-			<key>name</key>
-			<string>variable.other</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#escape</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
 			<string>:</string>
 			<key>end</key>
 			<string>(?=,|\{|\}|\[)</string>
@@ -67,7 +52,7 @@
 					<key>match</key>
 					<string>\b(true|false|null)\b</string>
 					<key>name</key>
-					<string>constant.language.json</string>
+					<string>keyword.reserved.js</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -86,6 +71,27 @@
 				<dict>
 					<key>include</key>
 					<string>#invalid</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>".*"\s*(?=:)</string>
+			<key>name</key>
+			<string>variable.other</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#escape</string>
 				</dict>
 			</array>
 		</dict>
