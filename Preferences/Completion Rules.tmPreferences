@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Cancel Completion</string>
 	<key>scope</key>
-	<string>source.js string.quoted</string>
+	<string>source.js string.quoted, source.js comment</string>
 	<key>settings</key>
 	<dict>
 		<key>cancelCompletion</key>

@@ -124,7 +124,7 @@
 			<key>begin</key>
 			<string>//</string>
 			<key>end</key>
-			<string>\n|$\n?</string>
+			<string>$</string>
 			<key>name</key>
 			<string>comment.line.js</string>
 		</dict>
