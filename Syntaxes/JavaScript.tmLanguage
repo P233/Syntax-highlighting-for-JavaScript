@@ -68,7 +68,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(Anchor|Applet|Area|Array|Boolean|Button|Checkbox|Date|document|event|FileUpload|Form|Frame|Function|Hidden|History|Image|JavaArray|JavaClass|JavaObject|JavaPackage|java|Layer|Link|Location|Math|MimeType|Number|navigator|netscape|Object|Option|Packages|Password|Plugin|Radio|RegExp|Reset|Select|String|Style|Submit|screen|sun|Text|Textarea|window|XMLHttpRequest)\b</string>
+			<string>(?&lt;!\.|\$)\b(Anchor|Applet|Area|Array|Boolean|Button|Checkbox|Date|document|event|FileUpload|Form|Frame|Function|Hidden|History|Image|JavaArray|JavaClass|JavaObject|JavaPackage|java|Layer|Link|Location|Math|MimeType|Number|navigator|netscape|Object|Option|Packages|Password|Plugin|Radio|RegExp|Reset|Select|String|Style|Submit|screen|sun|Text|Textarea|window|XMLHttpRequest)\b</string>
 			<key>name</key>
 			<string>support.constant.js</string>
 		</dict>
@@ -76,7 +76,7 @@
 			<key>comment</key>
 			<string>highlight delete, typeof, void, instanceof as operator</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(break|function|return|case|do|if|switch|var|catch|else|in|this|continue|false|throw|while|debugger|finally|new|true|with|default|for|null|try|class|const|enum|export|extends|import|super|implements|let|private|public|yield|interface|package|protected|static|arguments|eval)\b</string>
+			<string>(?&lt;!\.|\$)\b(break|function|return|case|do|if|switch|var|catch|else|in|this|continue|false|throw|while|debugger|finally|new|true|with|default|for|null|try|class|const|enum|export|extends|import|super|implements|let|private|public|yield|interface|package|protected|static|arguments|eval)\b</string>
 			<key>name</key>
 			<string>keyword.reserved.js</string>
 		</dict>
@@ -88,7 +88,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\+|-|\*|/|%|=|!|\^|~|\||&lt;|&gt;|&amp;|(?&lt;!\.)\b(delete|typeof|void|instanceof|in|of)\b</string>
+			<string>\+|-|\*|/|%|=|!|\^|~|\||&lt;|&gt;|&amp;|(?&lt;!\.|\$)\b(delete|typeof|void|instanceof|in|of)\b</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
 		</dict>
