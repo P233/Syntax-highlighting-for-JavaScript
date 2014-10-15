@@ -13,6 +13,9 @@
 		<string>sublime-build</string>
 		<string>sublime-project</string>
 		<string>sublime-completions</string>
+		<string>.jshintrc</string>
+		<string>.jslintrc</string>
+		<string>.jscsrc</string>
 	</array>
 	<key>name</key>
 	<string>JSON</string>
