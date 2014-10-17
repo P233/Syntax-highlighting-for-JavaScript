@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>js</string>
+		<string>sketchplugin</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!/usr/bin/env node</string>
