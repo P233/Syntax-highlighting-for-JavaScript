@@ -58,10 +58,8 @@
 					<string>keyword.reserved.js</string>
 				</dict>
 				<dict>
-					<key>match</key>
-					<string>(-|\.)?\b[0-9]+(\.[0-9]+)?\b|\bNaN\b|-?\bInfinity\b|\b0(x|X)[0-9a-fA-F]+</string>
-					<key>name</key>
-					<string>constant.numeric.js</string>
+					<key>include</key>
+					<string>#numeric</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -97,6 +95,10 @@
 					<string>#escape</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#numeric</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -144,6 +146,13 @@
 			<string>[A-Za-z_']*</string>
 			<key>name</key>
 			<string>invalid.illegal</string>
+		</dict>
+		<key>numeric</key>
+		<dict>
+			<key>match</key>
+			<string>(-|\.)?\b[0-9]+(\.[0-9]+)?\b|\bNaN\b|-?\bInfinity\b|\b0(x|X)[0-9a-fA-F]+</string>
+			<key>name</key>
+			<string>constant.numeric.js</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
