@@ -79,7 +79,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>"\w+"\s*(?=:)</string>
+			<string>".*?+"\s*(?=:)</string>
 			<key>name</key>
 			<string>variable.other</string>
 		</dict>
