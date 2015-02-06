@@ -37,37 +37,26 @@
 					<string>invalid.illegal</string>
 				</dict>
 				<dict>
-					<key>begin</key>
-					<string>"</string>
-					<key>end</key>
-					<string>"</string>
-					<key>name</key>
-					<string>string.quoted.double.js</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#escape</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(true|false|null)\b</string>
-					<key>name</key>
-					<string>keyword.reserved.js</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#numeric</string>
-				</dict>
-				<dict>
 					<key>include</key>
 					<string>#comment-block</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>#comment-line</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#numeric</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(true|false|null)\b</string>
+					<key>name</key>
+					<string>keyword.reserved.js</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -82,31 +71,20 @@
 			<string>variable.other</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>"</string>
-			<key>end</key>
-			<string>"</string>
-			<key>name</key>
-			<string>string.quoted.double.js</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#escape</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#numeric</string>
-		</dict>
-		<dict>
 			<key>include</key>
 			<string>#comment-block</string>
 		</dict>
 		<dict>
 			<key>include</key>
 			<string>#comment-line</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#quoted</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#numeric</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -139,6 +117,22 @@
 			<string>\\.{1}</string>
 			<key>name</key>
 			<string>constant.character.escape.js</string>
+		</dict>
+		<key>quoted</key>
+		<dict>
+			<key>begin</key>
+			<string>(")(?=.*\1)</string>
+			<key>end</key>
+			<string>\1</string>
+			<key>name</key>
+			<string>string.quoted.double.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#escape</string>
+				</dict>
+			</array>
 		</dict>
 		<key>invalid</key>
 		<dict>
