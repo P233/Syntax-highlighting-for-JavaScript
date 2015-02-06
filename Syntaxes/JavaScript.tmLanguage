@@ -76,7 +76,7 @@
 				(?&lt;=\{|,|\.|var)\s*[\w\$]+\s*(?=(:|=)\s*function)|
 				(?&lt;=^|\{|,)\s*[\w\$]+\s*(?=(:|=)\s*function)|
 				(?&lt;=^|\{|,)\s*('|")[\w\$-]+('|")\s*(?=(:|=)\s*function)|
-				(?&lt;=\w\[)\s*[\w\$]+\s*(?=\]\()
+				(?&lt;=\[|\.)\s*[\w\$]+\s*(?=\]\()
 			</string>
 			<key>name</key>
 			<string>entity.name.function.js</string>
@@ -113,7 +113,7 @@
 				(?&lt;=\.)[\w\$]+(?=\.|\s|,|;|\[|\]|\)|}|\?|\+|\-|=|$)|
 				(?&lt;=^|\{|,)\s*[\w\$]+\s*(?=:)|
 				(?&lt;=^|\{|,)\s*('|")[\w\$-]+('|")\s*(?=:)|
-				(?&lt;=\w\[)\s*[\w\$]+\s*(?=\])
+				(?&lt;=(\w|\])\[)\s*[\w\$]+\s*(?=\])
 			</string>
 			<key>name</key>
 			<string>variable.other.property.js</string>
